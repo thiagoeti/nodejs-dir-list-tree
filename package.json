@@ -1,0 +1,31 @@
+{
+  "main":"dir-list-tree.js",
+  "name":"dir-list-tree",
+  "version":"0.0.1",
+  "description":"List tree with all files and directories.",
+  "keywords":[
+    "directory",
+    "files",
+    "list"
+  ],
+  "tags":[
+    "directory",
+    "files"
+  ],
+  "author":{
+    "name":"Thiago Silva",
+    "name":"thiago.eti@gmail.com",
+    "url":"https://thiago.eti.br"
+  },
+  "repository":{
+    "type":"git",
+    "url":"github:thiagoeti/nodejs-dir-list-tree"
+  },
+  "bugs":"https://github.com/thiagoeti/nodejs-dir-list-tree/issues",
+  "dependencies":{},
+  "license":"unlicense.org",
+  "engines":{
+    "node": "*",
+    "npm": "*"
+  }
+}
