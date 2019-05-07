@@ -19,7 +19,7 @@ var dirListTree=require('dir-list-tree');
   console.log('Start!');
 
   // exemple
-  let tree=await dirTree('/data');
+  let tree=await dirListTree('/data');
 
   // console
   console.log(tree);

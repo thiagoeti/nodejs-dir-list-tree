@@ -1,7 +1,7 @@
 {
   "main":"dir-list-tree.js",
   "name":"dir-list-tree",
-  "version":"0.0.1",
+  "version":"0.0.2",
   "description":"List tree with all files and directories.",
   "keywords":[
     "directory",
