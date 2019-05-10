@@ -1,5 +1,5 @@
 // function
-var directory=async function(folder){
+var directory=async function(folder, clean=''){
 
   // list
   let list=[];
@@ -15,12 +15,14 @@ var directory=async function(folder){
 
     // check
     if(fs.statSync(folder+'/'+file).isDirectory()){
+      let f=folder.replace(clean, '');
       // recoursive
-      let files=await directory(folder+'/'+file);
-      list.push({type:'directory', path:folder+'/'+file, files:files});
+      let files=await directory(folder+'/'+file, clean);
+      list.push({type:'directory', path:f+'/'+file, files:files});
     }else{
+      let f=folder.replace(clean, '');
       // add
-      list.push({type:'file', path:folder+'/'+file});
+      list.push({type:'file', path:f+'/'+file});
     }
 
   });
